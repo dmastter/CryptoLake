@@ -72,8 +72,8 @@ Bronze streaming runs as a service.
     - `docker exec airflow-webserver airflow dags list-runs -d cryptolake_full_pipeline -o table`
 
 ## Web UIs (local)
-- Airflow UI: `http://localhost:8083` (user created by `start_cryptolake.bat`: `diego_admin` / `Lakehouse2026`)
-- MinIO Console: `http://localhost:9001` (user created by `start_cryptolake.bat`: `lakeadmin` / `LakeMinio2026`)
+- Airflow UI: `http://localhost:8083` (admin user created by `start_cryptolake.bat`, password from `AIRFLOW_ADMIN_PASSWORD` in `.env`)
+- MinIO Console: `http://localhost:9001` (`lakeadmin` user created by `start_cryptolake.bat`, password from `MINIO_LAKEADMIN_PASSWORD` in `.env`)
 - Kafka UI: `http://localhost:8080`
 - Spark Master UI: `http://localhost:8082`
 - Streamlit: `http://localhost:8502`
